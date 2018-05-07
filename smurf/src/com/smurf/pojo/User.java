@@ -6,13 +6,24 @@ public class User {
 	private String iDnumber;
 	private String sex;
 	private int age;
-	private String district_1;//¼®¹áÊ¡·Ý
-	private String district_2;//¼®¹á³ÇÊÐ
-	private String company_1;//µÚÒ»·Ý¹¤×÷
-	private String company_1_begin;//µÚÒ»·Ý¹¤×÷¿ªÊ¼Ê±¼ä
-	private String company_1_end;//µÚÒ»·Ý¹¤×÷½áÊøÊ±¼ä
-	private String job_1;//µÚÒ»·Ý¹¤×÷µÄÖ°Î»
-	private String company_2;//µÚ¶þ·Ý¹¤×÷
+	public String marriage;
+	public String nation;
+	public String birth_year;
+	public String birth_month;
+	public String politicalStatus;
+	public String residence;
+	public String province;
+	public String city;
+	public String street;
+	public String telephone;
+	public String district;
+	private String district_1;//ï¿½ï¿½ï¿½ï¿½Ê¡ï¿½ï¿½
+	private String district_2;//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	private String company_1;//ï¿½ï¿½Ò»ï¿½Ý¹ï¿½ï¿½ï¿½
+	private String company_1_begin;//ï¿½ï¿½Ò»ï¿½Ý¹ï¿½ï¿½ï¿½ï¿½ï¿½Ê¼Ê±ï¿½ï¿½
+	private String company_1_end;//ï¿½ï¿½Ò»ï¿½Ý¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
+	private String job_1;//ï¿½ï¿½Ò»ï¿½Ý¹ï¿½ï¿½ï¿½ï¿½ï¿½Ö°Î»
+	private String company_2;//ï¿½Ú¶ï¿½ï¿½Ý¹ï¿½ï¿½ï¿½
 	public int getId() {
 		return id;
 	}
@@ -37,10 +48,76 @@ public class User {
 	public void setiDnumber(String iDnumber) {
 		this.iDnumber = iDnumber;
 	}
+	public String getMarriage() {
+		return marriage;
+	}
+	public void setMarriage(String marriage) {
+		this.marriage = marriage;
+	}
+	public String getDistrict() {
+		return district;
+	}
+	public void setDistrict(String district) {
+		this.district = district;
+	}
+	public String getNation() {
+		return nation;
+	}
+	public void setNation(String nation) {
+		this.nation = nation;
+	}
+	public String getBirth_year() {
+		return birth_year;
+	}
+	public void setBirth_year(String birth_year) {
+		this.birth_year = birth_year;
+	}
+	public String getBirth_month() {
+		return birth_month;
+	}
+	public void setBirth_month(String birth_month) {
+		this.birth_month = birth_month;
+	}
+	public String getPoliticalStatus() {
+		return politicalStatus;
+	}
+	public void setPoliticalStatus(String politicalStatus) {
+		this.politicalStatus = politicalStatus;
+	}
+	public String getResidence() {
+		return residence;
+	}
+	public void setResidence(String residence) {
+		this.residence = residence;
+	}
+	public String getProvince() {
+		return province;
+	}
+	public void setProvince(String province) {
+		this.province = province;
+	}
+	public String getCity() {
+		return city;
+	}
+	public void setCity(String city) {
+		this.city = city;
+	}
+	public String getStreet() {
+		return street;
+	}
+	public void setStreet(String street) {
+		this.street = street;
+	}
+	public String getTelephone() {
+		return telephone;
+	}
+	public void setTelephone(String telephone) {
+		this.telephone = telephone;
+	}
 	
 	@Override
 	public String toString() {
-		return "ÓÃ»§ [id=" + id + ", ÐÕÃû=" + name + ",ÐÔ„e= " +sex+ ",Éí·Ý="+iDnumber+",¼®¹á="+district_1+district_2+"]";
+		return "ï¿½Ã»ï¿½ [id=" + id + ", ï¿½ï¿½ï¿½ï¿½=" + name + ",ï¿½Ô„e= " +sex+ ",ï¿½ï¿½ï¿½="+iDnumber+",ï¿½ï¿½ï¿½ï¿½="+district_1+district_2+"]";
 	}
 	public String getDistrict_2() {
 		return district_2;
