@@ -5,8 +5,8 @@
 
 	<mapper namespace="com.smurf.mapper.UserMapper">
 	    <insert id="add" parameterType="User" >
-		insert into user ( name, sex, idNumber, originPlace, marriage , nation , birth , politicalStatus , residence , province , city , street , telephone )
-	    values (#{name},#{sex},#{idNumber},#{originPlace},#{marriage},#{nation},#{birth},#{politicalStatus},#{residence},#{province},#{city},#{street},#{telephone}) 
+		insert into user (name,sex,origin_place,id_number,marriage,nation,birth,political_status,residence,province,city,street,telephone,criminal_record,language_skill,other_skill,education,work1_start,work1_end,work1_company_name,work1_position,work1_salary,work1_quit_reason,work1_company_nature,work1_labor_property,work2_start,work2_end,work2_company_name,work2_position,work2_salary,work2_quit_reason,work2_company_nature,work2_labor_property,family1_name,family1_relation,family1_birth,family1_career,family1_city,family1_telephone,family2_name,family2_relation,family2_birth,family2_career,family2_city,family2_telephone,emergency_name,emergency_relation,emergency_telephone,emergency_address,self_evaluation )
+	    values (#{name},#{sex},#{idNumber},#{originPlace},#{marriage},#{nation},#{birth},#{politicalStatus},#{residence},#{province},#{city},#{street},#{telephone},#{criminalRecord},#{languageSkill},#{otherSkill},#{education},#{work1Start},#{work1End},#{work1Company_name},#{work1Position},#{work1Salary},#{work1Quit_reason},#{work1Company_nature},#{work1Labor_property},#{work2Start},#{work2End},#{work2Company_name},#{work2Position},#{work2Salary},#{work2Quit_reason},#{work2Company_nature},#{work2Labor_property},#{family1Name},#{family1Relation},#{family1Birth},#{family1Career},#{family1City},#{family1Telephone},#{family2Name},#{family2Relation},#{family2Birth},#{family2Career},#{family2City},#{family2Telephone},#{emergencyName},#{emergencyRelation},#{emergencyTelephone},#{emergencyAddress},#{selfEvaluation}) 
 	    </insert>
 	    
 

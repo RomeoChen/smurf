@@ -21,18 +21,18 @@ public class MybatisTest {
 	@Test
 	public void testAdd() {
 		User user = new User();
-		user.setName("²âÊÔÓÃ»§");
-		user.setMarriage("Î´»é");
-		user.setNation("ºº×å");
-		user.setOriginPlace("ºþ±±Îäºº");
-		user.setPoliticalStatus("ÈºÖÚ");
-		user.setProvince("ºþ±±");
-		user.setCity("Îäºº");
-		user.setStreet("ºéÉ½ÇøçóÓ÷Â·388ºÅ");
-		user.setResidence("ºþ±±Îäºº");
+		user.setName("ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½");
+		user.setMarriage("Î´ï¿½ï¿½");
+		user.setNation("ï¿½ï¿½ï¿½ï¿½");
+		user.setOriginPlace("ï¿½ï¿½ï¿½ï¿½ï¿½äºº");
+		user.setPoliticalStatus("Èºï¿½ï¿½");
+		user.setProvince("ï¿½ï¿½ï¿½ï¿½");
+		user.setCity("ï¿½äºº");
+		user.setStreet("ï¿½ï¿½É½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â·388ï¿½ï¿½");
+		user.setResidence("ï¿½ï¿½ï¿½ï¿½ï¿½äºº");
 		user.setTelephone("14214232457");
-		user.setidNumber("4210111111");
-		user.setSex("ÄÐ");
+		user.setIdNumber("222222222");
+		user.setSex("ï¿½ï¿½");
 		user.setBirth("1994-08");
 		userMapper.add(user);
 	}
