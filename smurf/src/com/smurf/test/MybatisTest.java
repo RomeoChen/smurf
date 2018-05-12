@@ -22,51 +22,21 @@ public class MybatisTest {
 	public void testAdd() {
 		User user = new User();
 		user.setName("测试用户");
-		user.setDistrict_1("湖南");
-		user.setiDnumber("4210111111");
+		user.setMarriage("未婚");
+		user.setNation("汉族");
+		user.setOriginPlace("湖北武汉");
+		user.setPoliticalStatus("群众");
+		user.setProvince("湖北");
+		user.setCity("武汉");
+		user.setStreet("洪山区珞喻路388号");
+		user.setResidence("湖北武汉");
+		user.setTelephone("14214232457");
+		user.setidNumber("4210111111");
 		user.setSex("男");
+		user.setBirth("1994-08");
 		userMapper.add(user);
 	}
 
-	@Test
-	public void testList() {
-		System.out.println(userMapper);
-		List<User> users=userMapper.list();
-		for (User user : users) {
-			System.out.println(user.getName());
-		}
-	}
 	
-	@Test
-	public void testDelete() {
-		int id = 1;
-		userMapper.delete(id);
-	}
-	
-	@Test
-	public void testCount() {
-		System.out.println(userMapper.count());
-	}
-	
-	@Test
-	public void testUpdate() {
-		User user=new User();
-		user.setId(2);
-		user.setDistrict_1("湖北");
-		user.setiDnumber("12121231");
-		user.setName("测试更改");
-		user.setSex("女");
-		if(userMapper.update(user)>0) {
-			System.out.println("True");
-		}else {
-			System.out.println("False");
-		}
-	}
-	
-	@Test
-	public void testGet() {
-		int id=2;
-		System.out.println(userMapper.getById(id));
-	}
 
 }

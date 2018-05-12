@@ -5,27 +5,10 @@
 
 	<mapper namespace="com.smurf.mapper.UserMapper">
 	    <insert id="add" parameterType="User" >
-	        insert into user ( name, sex, iDnumber, district ) values (#{name},#{sex},#{iDnumber},#{district}) 
+		insert into user ( name, sex, idNumber, originPlace, marriage , nation , birth , politicalStatus , residence , province , city , street , telephone )
+	    values (#{name},#{sex},#{idNumber},#{originPlace},#{marriage},#{nation},#{birth},#{politicalStatus},#{residence},#{province},#{city},#{street},#{telephone}) 
 	    </insert>
 	    
-	    <delete id="delete" parameterType="_int" >
-	        delete from user where id= #{id}   
-	    </delete>
-	    
-	    <select id="getById" parameterType="_int" resultType="User">
-	        select * from user where id= #{id}    
-	    </select>
 
-	    <update id="update" parameterType="User" >
-	        update user set name=#{name},sex=#{sex},iDnumber=#{iDnumber},district=#{district} where id=#{id}    
-	    </update>
-	    
-	    <select id="list" resultType="User">
-	        select * from user      
-	    </select>	    
-	    
-	    <select id="count" resultType="_int">
-	    	select count(*) from user
-	    </select>
 	</mapper>
 

@@ -27,7 +27,7 @@ public class UserController {
 	@RequestMapping("/addUser")
 	//http://localhost/smurf/user/addUser/
 	public String addUser(User user, Model model) {
-		//userService.add(user);
+		userService.add(user);
 		return "redirect:qrcode";
 	}
 	
